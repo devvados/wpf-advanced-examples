@@ -1,0 +1,20 @@
+﻿<Window x:Class="TryMultithread.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TryMultithread"
+        mc:Ignorable="d"
+        Title="Многопоточное приложение" Height="303.44" Width="367.661">
+    <Grid>
+        <GroupBox x:Name="GbControls" Header="Контролы" HorizontalAlignment="Left" Height="147" Margin="45,43,0,0" VerticalAlignment="Top" Width="251">
+            <Grid HorizontalAlignment="Left" Height="118" Margin="10,3,0,0" VerticalAlignment="Top" Width="224">
+                <TextBox x:Name="TbText" HorizontalAlignment="Left" Height="29" Margin="19,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
+                <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Left" Height="28" Margin="19,70,0,0" VerticalAlignment="Top" Width="187"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="BStart" Content="Запуск" HorizontalAlignment="Left" Height="32" Margin="45,204,0,0" VerticalAlignment="Top" Width="77" Click="BStart_OnClick"/>
+        <Button x:Name="BStop" Content="Стоп" HorizontalAlignment="Left" Height="32" Margin="219,204,0,0" VerticalAlignment="Top" Width="77" Click="BStop_OnClick"/>
+
+    </Grid>
+</Window>

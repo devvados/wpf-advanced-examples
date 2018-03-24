@@ -1,0 +1,17 @@
+﻿<Window x:Class="AdvancedFileViewer.CreateFolderOrFile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvancedFileViewer"
+        mc:Ignorable="d"
+        Title="Создать" Height="253.759" Width="300">
+    <Grid>
+        <Label x:Name="LabCreateObject" Content="Создать объект:" HorizontalAlignment="Left" Height="30" Margin="33,31,0,0" VerticalAlignment="Top" Width="100"/>
+        <RadioButton x:Name="RbFile" Content="Файл" HorizontalAlignment="Left" Height="28" Margin="33,76,0,0" VerticalAlignment="Top" Width="100"/>
+        <RadioButton x:Name="RbFolder" Content="Папку" HorizontalAlignment="Left" Height="28" Margin="33,109,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="TbName" HorizontalAlignment="Left" Height="30" Margin="149,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113"/>
+        <Label x:Name="LabName" Content="Имя" HorizontalAlignment="Left" Height="30" Margin="149,31,0,0" VerticalAlignment="Top" Width="113"/>
+        <Button x:Name="ButCreate" Content="Создать" HorizontalAlignment="Left" Height="30" Margin="60,161,0,0" VerticalAlignment="Top" Width="140" Click="ButCreate_Click"/>
+    </Grid>
+</Window>

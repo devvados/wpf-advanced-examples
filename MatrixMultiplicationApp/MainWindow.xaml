@@ -1,0 +1,51 @@
+﻿<Window x:Class="MatrixMultiplicationApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatrixMultiplicationApp"
+        mc:Ignorable="d"
+        Title="Умножалка матриц" Height="512.204" Width="1023.211">
+    <Grid x:Name="Grid">
+        <GroupBox x:Name="GbMatA" Header="Матрица А" HorizontalAlignment="Left" Height="398" Margin="19,30,0,0" VerticalAlignment="Top" Width="323">
+            <Grid Height="361" Margin="10,0,10,5" VerticalAlignment="Bottom">
+                <Button x:Name="BFillMatA" Content="Заполнить" HorizontalAlignment="Left" Height="30" Margin="10,321,0,0" VerticalAlignment="Top" Width="110" Click="FillMatrixA_Click"/>
+                <ProgressBar x:Name="PbLoadA" HorizontalAlignment="Left" Height="28" Margin="10,279,0,0" VerticalAlignment="Top" Width="270"/>
+                <DataGrid x:Name="DgMatA" Margin="10,10,11,111"  ItemsSource="{Binding}"/>
+                <Button x:Name="BFillDgA" Content="Показать" HorizontalAlignment="Left" Height="30" Margin="170,321,0,0" VerticalAlignment="Top" Width="110" Click="BFillDgA_OnClick"/>
+            </Grid>
+        </GroupBox>
+        <Menu x:Name="Menu" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="1015">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Сохранить" Margin="0,0,3,0" Width="150">
+                    <MenuItem Header="Матрица А" HorizontalAlignment="Left" Width="150" Click ="SaveMatA_Click"/>
+                    <MenuItem Header="Матрица B" HorizontalAlignment="Left" Width="150" Click="SaveMatB_Click"/>
+                </MenuItem>
+                <MenuItem Header="Загрузить" HorizontalAlignment="Left" Width="150">
+                    <MenuItem Header="Матрица А" HorizontalAlignment="Left" Width="150" Click="LoadMatA_Click"/>
+                    <MenuItem Header="Матрица B" HorizontalAlignment="Left" Width="150" Click="LoadMatB_Click"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="DimItem" Header="Размерность матриц" Height="25" Click="DimItem_Click"/>
+            <MenuItem x:Name="Calculate" Header="Умножить матрицы" Click="bCalculate_Click"/>
+        </Menu>
+        <GroupBox x:Name="GbMatB" Header="Матрица B" HorizontalAlignment="Left" Height="398" Margin="347,30,0,0" VerticalAlignment="Top" Width="323">
+            <Grid Height="361" Margin="10,0,10,5" VerticalAlignment="Bottom">
+                <Button x:Name="BFillMatB" Content="Заполнить" HorizontalAlignment="Left" Height="30" Margin="10,321,0,0" VerticalAlignment="Top" Width="110" Click="FillMatrixB_Click"/>
+                <ProgressBar x:Name="PbLoadB" HorizontalAlignment="Left" Height="28" Margin="10,279,0,0" VerticalAlignment="Top" Width="270"/>
+                <DataGrid x:Name="DgMatB" Margin="10,10,11,111" ItemsSource="{Binding}"/>
+                <Button x:Name="BFillDgB" Content="Показать" HorizontalAlignment="Left" Margin="171,321,0,0" VerticalAlignment="Top" Width="110" Height="30" Click="BFillDgB_OnClick"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="GbMatC" Header="Матрица C" HorizontalAlignment="Left" Height="398" Margin="675,30,0,0" VerticalAlignment="Top" Width="323">
+            <Grid Height="361" Margin="10,0,10,5" VerticalAlignment="Bottom">
+                <ProgressBar x:Name="PbLoadC" HorizontalAlignment="Left" Height="28" Margin="10,279,0,0" VerticalAlignment="Top" Width="270"/>
+                <DataGrid x:Name="DgMatC" Margin="10,10,11,111"  ItemsSource="{Binding}"/>
+                <Button x:Name="BFillDgC" Content="Показать" HorizontalAlignment="Left" Margin="170,321,0,0" VerticalAlignment="Top" Width="110" Height="30" Click="BFillDgC_OnClick"/>
+            </Grid>
+        </GroupBox>
+        <StatusBar HorizontalAlignment="Left" Height="35" Margin="0,446,0,0" VerticalAlignment="Top" Width="1015">
+            <Label x:Name="LabStatus" Content="" Width="200" VerticalContentAlignment="Center" Height="25"/>
+        </StatusBar>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="AdvancedFileViewer.AttributeReadOnly"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvancedFileViewer"
+        mc:Ignorable="d"
+        Title="Только для чтения" Height="206.667" Width="237.333">
+    <Grid>
+        <RadioButton x:Name="RbSet" Content="Задать" HorizontalAlignment="Left" Height="25" Margin="51,36,0,0" VerticalAlignment="Top" Width="130"/>
+        <RadioButton x:Name="RbOff" Content="Снять" HorizontalAlignment="Left" Height="25" Margin="51,65,0,0" VerticalAlignment="Top" Width="130"/>
+        <Button x:Name="ButOk" Content="OK" HorizontalAlignment="Left" Height="30" Margin="51,108,0,0" VerticalAlignment="Top" Width="130" Click="ButOk_Click"/>
+
+    </Grid>
+</Window>

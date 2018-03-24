@@ -1,0 +1,15 @@
+﻿<Window x:Class="MatrixMultiplicationApp.MatrixDimension"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatrixMultiplicationApp"
+        mc:Ignorable="d"
+        Title="Размерность" Height="184.593" Width="208.122">
+    <Grid>
+        <TextBox x:Name="TbDim" PreviewTextInput="NumberValidationTextBox" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="35" Margin="51,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <Label x:Name="LbDim" Content="Введите число" HorizontalAlignment="Left" Height="35" Margin="51,10,0,0" VerticalAlignment="Top" Width="90"/>
+        <Button x:Name="BDim" Content="ОК" HorizontalAlignment="Left" Height="30" Margin="51,99,0,0" VerticalAlignment="Top" Width="90" Click="bDim_Click"/>
+
+    </Grid>
+</Window>

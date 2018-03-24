@@ -1,0 +1,22 @@
+﻿<Window x:Class="Hospital.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hospital"
+        mc:Ignorable="d"
+        Title="Инфекционное отделение" Height="350" Width="636">
+    <Grid>
+        <Menu x:Name="menu" Height="30" Background="Transparent" VerticalAlignment="Top">
+            <MenuItem x:Name="AddPatient"  VerticalAlignment="Center" Background="Transparent" FontSize="13" Header="Добавить пацента" Height="25" Click="AddPatient_Click"/>
+            <MenuItem x:Name="CreateQueue" Height="25" Header="Составить очередь" FontSize="13" VerticalAlignment="Center" Background="Transparent" Click="CreateQueue_Click"/>
+            <MenuItem x:Name="Begin" VerticalAlignment="Center" Background="Transparent" FontSize="13" Header="Начать прием" Height="25" Click="Begin_Click"/>
+        </Menu>
+        <GroupBox x:Name="gbQueue" BorderThickness="1" Header="Очередь" HorizontalAlignment="Left" Height="250" Margin="10,43,0,0" VerticalAlignment="Top" Width="266">
+            <TextBox x:Name="tbQueue" BorderThickness="0" IsReadOnly="True" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" Height="210"/>
+        </GroupBox>
+        <GroupBox x:Name="gbDoc" BorderThickness="1" Header="На приеме" HorizontalAlignment="Left" Height="250" Margin="281,43,0,0" VerticalAlignment="Top" Width="337">
+            <TextBox x:Name="tbDoc" BorderThickness="0" IsReadOnly="True" HorizontalAlignment="Left" Height="210" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305"/>
+        </GroupBox>
+    </Grid>
+</Window>

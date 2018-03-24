@@ -1,0 +1,16 @@
+﻿<Window x:Class="Interpreter.Executer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interpreter"
+        mc:Ignorable="d"
+        Title="Выполнение" Height="341.862" Width="306.767">
+    <Grid Margin="0,0,0,-1">
+        <Menu x:Name="menu" HorizontalAlignment="Left" Background="White" Height="30" VerticalAlignment="Top" Width="299">
+            <MenuItem Header="Загрузить команды" HorizontalContentAlignment="Center" Height="30" Click="Load_Click"/>
+        </Menu>
+        <TextBox x:Name="tbCom" HorizontalAlignment="Left" Margin="19,45,0,70" TextWrapping="Wrap" Width="250" BorderThickness="0" Height="190"/>
+        <Button x:Name="bStart" Content="Запустить" HorizontalAlignment="Left" Height="35" Margin="19,252,0,0" VerticalAlignment="Top" Width="122" Click="bStart_Click"/>
+    </Grid>
+</Window>

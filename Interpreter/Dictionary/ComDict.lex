@@ -1,0 +1,25 @@
+﻿ВЫВОД 
+NOT
+OR
+AND
+XOR
+IMP
+COIMP
+EQV
+PIERCE
+SHEFFER
+ADD
+SUB
+MULT
+DIV
+MOD
+SWAP
+MOVE
+PRINT(cc)
+ENTER NUM
+2^P
+<<
+>>
+<<<
+>>>
+MOVE 2->1

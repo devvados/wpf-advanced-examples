@@ -1,0 +1,22 @@
+﻿<Window x:Class="CashAccount.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CashAccount"
+        mc:Ignorable="d"
+        Title="InfoWindow" Height="318.085" Width="655.713">
+    <Grid>
+        <RadioButton x:Name="rb1" Content="Первый счет" HorizontalAlignment="Left" Height="25" Margin="10,189,0,0" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rb2" Content="Второй счет" HorizontalAlignment="Left" Height="25" Margin="135,188,0,0" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rb3" Content="Третий счет" HorizontalAlignment="Left" Height="25" Margin="260,189,0,0" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rb4" Content="Четвертый счет" HorizontalAlignment="Left" Height="25" Margin="385,188,0,0" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rb5" Content="Пятый счет" HorizontalAlignment="Left" Height="25" Margin="510,188,0,0" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="Info1" HorizontalAlignment="Left" Height="170" Margin="10,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Info2" HorizontalAlignment="Left" Height="170" Margin="135,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Info3" HorizontalAlignment="Left" Height="170" Margin="260,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Info4" HorizontalAlignment="Left" Height="170" Margin="385,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Info5" HorizontalAlignment="Left" Height="170" Margin="510,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Close" HorizontalAlignment="Left" Height="32" Margin="10,231,0,0" VerticalAlignment="Top" Width="120" Click="button_Click"/>
+    </Grid>
+</Window>
